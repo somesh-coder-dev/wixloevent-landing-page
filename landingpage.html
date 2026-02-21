@@ -1,0 +1,2013 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wixlo Event | Unforgettable Experiences</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { DEFAULT: '#7c3aed', dark: '#5b21b6', light: '#a78bfa', },
+                        accent: { DEFAULT: '#facc15', hover: '#eab308', },
+                        dark: { 950: '#0c0a1d', 900: '#1e1b4b', 800: '#2e1065', 700: '#3b1f8e', },
+                        neon: { pink: '#ff2d75', blue: '#00d4ff', green: '#00ff88', },
+                    },
+                    fontFamily: { sans: ['Outfit', 'sans-serif'], },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'float-delay': 'float 6s ease-in-out 2s infinite',
+                        'float-slow': 'float 8s ease-in-out 1s infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                        'slide-up': 'slideUp 0.8s ease-out forwards',
+                        'slide-down': 'slideDown 0.5s ease-out forwards',
+                        'slide-left': 'slideLeft 0.8s ease-out forwards',
+                        'slide-right': 'slideRight 0.8s ease-out forwards',
+                        'fade-in': 'fadeIn 1s ease-out forwards',
+                        'scale-in': 'scaleIn 0.6s ease-out forwards',
+                        'spin-slow': 'spin 20s linear infinite',
+                        'spin-reverse': 'spinReverse 15s linear infinite',
+                        'morph': 'morph 8s ease-in-out infinite',
+                        'gradient-shift': 'gradientShift 8s ease infinite',
+                        'typewriter': 'typewriter 3s steps(30) 1s forwards',
+                        'blink': 'blink 1s step-end infinite',
+                        'marquee': 'marquee 25s linear infinite',
+                        'pulse-ring': 'pulseRing 2s ease-out infinite',
+                        'tilt': 'tilt 10s ease-in-out infinite',
+                        'shimmer': 'shimmer 2s linear infinite',
+                        'bounce-x': 'bounceX 1s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: { '0%, 100%': { transform: 'translateY(0px)' }, '50%': { transform: 'translateY(-20px)' }, },
+                        glow: { '0%': { boxShadow: '0 0 5px #7c3aed, 0 0 10px #7c3aed' }, '100%': { boxShadow: '0 0 20px #7c3aed, 0 0 40px #a78bfa, 0 0 60px #7c3aed' }, },
+                        slideUp: { '0%': { opacity: '0', transform: 'translateY(60px)' }, '100%': { opacity: '1', transform: 'translateY(0)' }, },
+                        slideDown: { '0%': { opacity: '0', transform: 'translateY(-30px)' }, '100%': { opacity: '1', transform: 'translateY(0)' }, },
+                        slideLeft: { '0%': { opacity: '0', transform: 'translateX(60px)' }, '100%': { opacity: '1', transform: 'translateX(0)' }, },
+                        slideRight: { '0%': { opacity: '0', transform: 'translateX(-60px)' }, '100%': { opacity: '1', transform: 'translateX(0)' }, },
+                        fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' }, },
+                        scaleIn: { '0%': { opacity: '0', transform: 'scale(0.8)' }, '100%': { opacity: '1', transform: 'scale(1)' }, },
+                        spinReverse: { '100%': { transform: 'rotate(-360deg)' }, },
+                        morph: { '0%, 100%': { borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%' }, '50%': { borderRadius: '30% 60% 70% 40% / 50% 60% 30% 60%' }, },
+                        gradientShift: { '0%': { backgroundPosition: '0% 50%' }, '50%': { backgroundPosition: '100% 50%' }, '100%': { backgroundPosition: '0% 50%' }, },
+                        typewriter: { '0%': { width: '0' }, '100%': { width: '100%' }, },
+                        blink: { '50%': { borderColor: 'transparent' }, },
+                        marquee: { '0%': { transform: 'translateX(0%)' }, '100%': { transform: 'translateX(-50%)' }, },
+                        pulseRing: { '0%': { transform: 'scale(0.5)', opacity: '1' }, '100%': { transform: 'scale(2)', opacity: '0' }, },
+                        tilt: { '0%, 100%': { transform: 'rotate(-3deg)' }, '50%': { transform: 'rotate(3deg)' }, },
+                        shimmer: { '0%': { backgroundPosition: '-200% 0' }, '100%': { backgroundPosition: '200% 0' }, },
+                        bounceX: { '0%, 100%': { transform: 'translateX(0)' }, '50%': { transform: 'translateX(8px)' }, },
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* === Glass Effects === */
+        .glass-nav {
+            background: rgba(12, 10, 29, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(124, 58, 237, 0.15);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .glass-card-light {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        /* === Gradients === */
+        .text-gradient {
+            background: linear-gradient(135deg, #facc15, #ff2d75, #a78bfa, #00d4ff);
+            background-size: 300% 300%;
+            animation: gradientShift 4s ease infinite;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text-gradient-static {
+            background: linear-gradient(to right, #facc15, #a78bfa);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .bg-mesh {
+            background: radial-gradient(at 20% 80%, rgba(124, 58, 237, 0.3) 0, transparent 50%), radial-gradient(at 80% 20%, rgba(250, 204, 21, 0.15) 0, transparent 50%), radial-gradient(at 50% 50%, rgba(0, 212, 255, 0.1) 0, transparent 50%);
+        }
+
+        /* === Cards === */
+        .card-3d {
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            transform-style: preserve-3d;
+        }
+
+        .card-3d:hover {
+            transform: translateY(-12px) rotateX(4deg) rotateY(-2deg);
+            box-shadow: 0 30px 60px -15px rgba(124, 58, 237, 0.35), 0 0 40px -10px rgba(124, 58, 237, 0.15);
+        }
+
+        /* === Animated Border === */
+        .border-glow {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .border-glow::before {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            background: conic-gradient(from 0deg, #7c3aed, #facc15, #00d4ff, #ff2d75, #7c3aed);
+            border-radius: inherit;
+            z-index: -1;
+            animation: spin 4s linear infinite;
+        }
+
+        .border-glow::after {
+            content: '';
+            position: absolute;
+            inset: 2px;
+            background: #0c0a1d;
+            border-radius: inherit;
+            z-index: -1;
+        }
+
+        /* === Shimmer Button === */
+        .btn-shimmer {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-shimmer::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            animation: shimmer 2s linear infinite;
+        }
+
+        /* === Scroll Reveal (hidden by default) === */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal-left.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal-right.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .reveal-scale {
+            opacity: 0;
+            transform: scale(0.85);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal-scale.active {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /* === Parallax === */
+        .parallax-layer {
+            will-change: transform;
+            transition: transform 0.1s linear;
+        }
+
+        /* === Custom Cursor Glow === */
+        .cursor-glow {
+            pointer-events: none;
+            position: fixed;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(124, 58, 237, 0.08) 0%, transparent 70%);
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+            transition: opacity 0.3s;
+        }
+
+        /* === Noise Texture Overlay === */
+        .noise::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        /* === Image Carousel === */
+        .carousel-track {
+            display: flex;
+            animation: marquee 25s linear infinite;
+        }
+
+        .carousel-track:hover {
+            animation-play-state: paused;
+        }
+
+        /* === Magnetic Button === */
+        .magnetic-btn {
+            transition: transform 0.2s ease;
+        }
+
+        /* === Stagger Children === */
+        .stagger>*:nth-child(1) {
+            transition-delay: 0.1s;
+        }
+
+        .stagger>*:nth-child(2) {
+            transition-delay: 0.2s;
+        }
+
+        .stagger>*:nth-child(3) {
+            transition-delay: 0.3s;
+        }
+
+        .stagger>*:nth-child(4) {
+            transition-delay: 0.4s;
+        }
+
+        .stagger>*:nth-child(5) {
+            transition-delay: 0.5s;
+        }
+
+        .stagger>*:nth-child(6) {
+            transition-delay: 0.6s;
+        }
+
+        /* === Scrollbar === */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0c0a1d;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, #7c3aed, #facc15);
+            border-radius: 10px;
+        }
+
+        /* === Number Counter === */
+        .counter-value {
+            font-variant-numeric: tabular-nums;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-dark-950 text-gray-100 font-sans antialiased overflow-x-hidden selection:bg-accent selection:text-dark-900">
+
+    <!-- Cursor Glow Effect -->
+    <div id="cursor-glow" class="cursor-glow hidden lg:block" style="opacity:0;"></div>
+
+    <!-- ===================== NAVIGATION ===================== -->
+    <header id="navbar" class="fixed w-full top-0 z-50 glass-nav transition-all duration-500">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-bold text-white flex items-center gap-2 group">
+                <span
+                    class="relative w-10 h-10 rounded-xl bg-gradient-to-br from-primary via-neon-pink to-accent flex items-center justify-center text-dark-900 font-black text-lg transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110">
+                    W
+                    <span
+                        class="absolute inset-0 rounded-xl animate-pulse-ring border-2 border-primary opacity-0 group-hover:opacity-100"></span>
+                </span>
+                <span class="tracking-tight">Wixlo<span class="text-gradient-static">Event</span></span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex items-center gap-1">
+                <a href="#about"
+                    class="relative px-4 py-2 text-gray-400 hover:text-white transition-colors font-medium group">
+                    About
+                    <span
+                        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-primary to-accent group-hover:w-3/4 transition-all duration-300 rounded-full"></span>
+                </a>
+                <a href="#services"
+                    class="relative px-4 py-2 text-gray-400 hover:text-white transition-colors font-medium group">
+                    Services
+                    <span
+                        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-primary to-accent group-hover:w-3/4 transition-all duration-300 rounded-full"></span>
+                </a>
+                <a href="#gallery"
+                    class="relative px-4 py-2 text-gray-400 hover:text-white transition-colors font-medium group">
+                    Gallery
+                    <span
+                        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-primary to-accent group-hover:w-3/4 transition-all duration-300 rounded-full"></span>
+                </a>
+                <a href="#stats"
+                    class="relative px-4 py-2 text-gray-400 hover:text-white transition-colors font-medium group">
+                    Impact
+                    <span
+                        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-primary to-accent group-hover:w-3/4 transition-all duration-300 rounded-full"></span>
+                </a>
+                <a href="#testimonials"
+                    class="relative px-4 py-2 text-gray-400 hover:text-white transition-colors font-medium group">
+                    Stories
+                    <span
+                        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-primary to-accent group-hover:w-3/4 transition-all duration-300 rounded-full"></span>
+                </a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="hidden lg:block">
+                <a href="#contact"
+                    class="btn-shimmer px-7 py-3 bg-gradient-to-r from-primary to-primary-dark hover:from-primary-light hover:to-primary text-white font-bold rounded-full transition-all transform hover:scale-105 shadow-lg shadow-violet-600/25 inline-flex items-center gap-2">
+                    <span>Get Started</span>
+                    <svg class="w-4 h-4 animate-bounce-x" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle"
+                class="lg:hidden text-white focus:outline-none relative w-10 h-10 flex items-center justify-center">
+                <span id="hamburger-top"
+                    class="absolute w-6 h-0.5 bg-white transition-all duration-300 -translate-y-2"></span>
+                <span id="hamburger-mid" class="absolute w-6 h-0.5 bg-white transition-all duration-300"></span>
+                <span id="hamburger-bot"
+                    class="absolute w-6 h-0.5 bg-white transition-all duration-300 translate-y-2"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden lg:hidden bg-dark-950/95 backdrop-blur-xl border-t border-white/5 absolute w-full overflow-hidden transition-all duration-500"
+            style="max-height:0;">
+            <nav class="flex flex-col gap-1 p-6 stagger">
+                <a href="#about"
+                    class="text-gray-300 hover:text-white hover:bg-white/5 px-4 py-3 rounded-lg transition-all reveal">About</a>
+                <a href="#services"
+                    class="text-gray-300 hover:text-white hover:bg-white/5 px-4 py-3 rounded-lg transition-all reveal">Services</a>
+                <a href="#gallery"
+                    class="text-gray-300 hover:text-white hover:bg-white/5 px-4 py-3 rounded-lg transition-all reveal">Gallery</a>
+                <a href="#stats"
+                    class="text-gray-300 hover:text-white hover:bg-white/5 px-4 py-3 rounded-lg transition-all reveal">Impact</a>
+                <a href="#testimonials"
+                    class="text-gray-300 hover:text-white hover:bg-white/5 px-4 py-3 rounded-lg transition-all reveal">Stories</a>
+                <a href="#contact"
+                    class="mt-2 text-center py-3 bg-gradient-to-r from-primary to-primary-dark text-white font-bold rounded-full reveal">Get
+                    Started</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden noise">
+        <!-- Dynamic Background Slideshow -->
+        <div id="hero-slideshow" class="absolute inset-0 z-0">
+            <div class="hero-slide absolute inset-0 opacity-100 transition-opacity duration-[2000ms]">
+                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1920&auto=format&fit=crop"
+                    alt="" class="w-full h-full object-cover scale-110 animate-[tilt_20s_ease-in-out_infinite]">
+            </div>
+            <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-[2000ms]">
+                <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=1920&auto=format&fit=crop"
+                    alt="" class="w-full h-full object-cover scale-110 animate-[tilt_20s_ease-in-out_infinite]">
+            </div>
+            <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-[2000ms]">
+                <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=1920&auto=format&fit=crop"
+                    alt="" class="w-full h-full object-cover scale-110 animate-[tilt_20s_ease-in-out_infinite]">
+            </div>
+            <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-[2000ms]">
+                <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=1920&auto=format&fit=crop"
+                    alt="" class="w-full h-full object-cover scale-110 animate-[tilt_20s_ease-in-out_infinite]">
+            </div>
+        </div>
+
+        <!-- Gradient Overlays -->
+        <div class="absolute inset-0 bg-gradient-to-b from-dark-950 via-dark-950/70 to-dark-950 z-[1]"></div>
+        <div class="absolute inset-0 bg-mesh z-[1]"></div>
+
+        <!-- Floating Orbs -->
+        <div class="absolute top-1/4 left-10 w-72 h-72 bg-primary/20 rounded-full blur-[100px] animate-float z-[1]">
+        </div>
+        <div
+            class="absolute bottom-1/4 right-10 w-96 h-96 bg-accent/10 rounded-full blur-[120px] animate-float-delay z-[1]">
+        </div>
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-neon-blue/5 rounded-full blur-[150px] animate-float-slow z-[1]">
+        </div>
+
+        <!-- Hero Content -->
+        <div class="container mx-auto px-6 relative z-10 text-center pt-20">
+            <!-- Badge -->
+            <div
+                class="inline-flex items-center gap-2 py-2 px-5 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm mb-8 animate-slide-down">
+                <span class="relative flex h-2.5 w-2.5">
+                    <span
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-neon-green opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-neon-green"></span>
+                </span>
+                <br>
+                <span class="text-gray-300 text-sm font-medium tracking-wide">Now Booking 2026 Events</span>
+            </div>
+
+            <!-- Main Title -->
+            <h1
+                class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white mb-8 leading-[1.05] tracking-tight">
+                <span class="block animate-slide-up" style="animation-delay: 0.2s; opacity:0;">Crafting Moments</span>
+                <span class="block animate-slide-up" style="animation-delay: 0.4s; opacity:0;">That Are</span>
+                <span class="block text-gradient animate-slide-up"
+                    style="animation-delay: 0.6s; opacity:0;">Extraordinary</span>
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in"
+                style="animation-delay: 1s; opacity:0;">
+                Award-winning event design that transforms spaces, captivates audiences, and creates memories that last
+                forever.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in"
+                style="animation-delay: 1.3s; opacity:0;">
+                <a href="#contact"
+                    class="btn-shimmer group px-10 py-4 bg-gradient-to-r from-primary via-primary-dark to-primary text-white font-bold rounded-full transition-all transform hover:scale-105 shadow-2xl shadow-violet-600/30 inline-flex items-center justify-center gap-3 text-lg">
+                    <span>Plan Your Event</span>
+                    <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </a>
+                <a href="#gallery"
+                    class="group px-10 py-4 bg-white/5 hover:bg-white/10 border border-white/15 hover:border-white/30 text-white font-bold rounded-full transition-all backdrop-blur-sm inline-flex items-center justify-center gap-3 text-lg">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z" />
+                    </svg>
+                    <span>Watch Showreel</span>
+                </a>
+            </div>
+
+            <!-- Slideshow Indicators -->
+            <div class="flex gap-3 justify-center mt-16 animate-fade-in" style="animation-delay: 1.6s; opacity:0;">
+                <button class="slide-dot w-12 h-1.5 rounded-full bg-white/60 transition-all duration-500"
+                    data-slide="0"></button>
+                <button
+                    class="slide-dot w-8 h-1.5 rounded-full bg-white/20 hover:bg-white/40 transition-all duration-500"
+                    data-slide="1"></button>
+                <button
+                    class="slide-dot w-8 h-1.5 rounded-full bg-white/20 hover:bg-white/40 transition-all duration-500"
+                    data-slide="2"></button>
+                <button
+                    class="slide-dot w-8 h-1.5 rounded-full bg-white/20 hover:bg-white/40 transition-all duration-500"
+                    data-slide="3"></button>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 animate-fade-in"
+            style="animation-delay: 2s; opacity:0;">
+            <span class="text-xs text-gray-500 uppercase tracking-[0.25em]">Scroll</span>
+            <div class="w-6 h-10 rounded-full border-2 border-white/20 flex justify-center pt-2">
+                <div class="w-1.5 h-3 rounded-full bg-white/60 animate-bounce"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== INFINITE LOGO MARQUEE ===================== -->
+    <section class="py-8 bg-dark-950 border-y border-white/5 overflow-hidden relative">
+        <div class="flex carousel-track">
+            <div class="flex items-center gap-16 px-8 shrink-0">
+                <span class="text-2xl font-bold text-gray-600 whitespace-nowrap">GLO<span
+                        class="text-primary">BAL</span></span>
+                <span class="text-2xl font-bold text-gray-600 whitespace-nowrap">TECH<span
+                        class="text-neon-blue">CORP</span></span>
+                <span class="text-2xl font-bold text-gray-600 whitespace-nowrap">INNO<span
+                        class="text-neon-pink">VATE</span></span>
+                <span class="text-2xl font-bold text-gray-600 whitespace-nowrap">FUTURE<span
+                        class="text-accent">SOFT</span></span>
+                <span class="text-2xl font-bold text-gray-600 whitespace-nowrap">ELITE<span
+                        class="text-neon-green">GROUP</span></span>
+                <span class="text-2xl font-bold text-gray-600 whitespace-nowrap">APEX<span
+                        class="text-primary-light">MEDIA</span></span>
+                <span class="text-2xl font-bold text-gray-600 whitespace-nowrap">NOVA<span
+                        class="text-accent">LABS</span></span>
+                <span class="text-2xl font-bold text-gray-600 whitespace-nowrap">COSMIC<span
+                        class="text-neon-blue">BYTE</span></span>
+            </div>
+            <div class="flex items-center gap-16 px-8 shrink-0" aria-hidden="true">
+                <span class="text-2xl font-bold text-gray-600 whitespace-nowrap">GLO<span
+                        class="text-primary">BAL</span></span>
+                <span class="text-2xl font-bold text-gray-600 whitespace-nowrap">TECH<span
+                        class="text-neon-blue">CORP</span></span>
+                <span class="text-2xl font-bold text-gray-600 whitespace-nowrap">INNO<span
+                        class="text-neon-pink">VATE</span></span>
+                <span class="text-2xl font-bold text-gray-600 whitespace-nowrap">FUTURE<span
+                        class="text-accent">SOFT</span></span>
+                <span class="text-2xl font-bold text-gray-600 whitespace-nowrap">ELITE<span
+                        class="text-neon-green">GROUP</span></span>
+                <span class="text-2xl font-bold text-gray-600 whitespace-nowrap">APEX<span
+                        class="text-primary-light">MEDIA</span></span>
+                <span class="text-2xl font-bold text-gray-600 whitespace-nowrap">NOVA<span
+                        class="text-accent">LABS</span></span>
+                <span class="text-2xl font-bold text-gray-600 whitespace-nowrap">COSMIC<span
+                        class="text-neon-blue">BYTE</span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ABOUT / FEATURES SECTION ===================== -->
+    <section id="about" class="py-28 bg-dark-950 relative overflow-hidden">
+        <!-- Decorative -->
+        <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[200px]"></div>
+
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <!-- Left: Image Composition -->
+                <div class="relative reveal-left">
+                    <!-- Main Image -->
+                    <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl shadow-primary/20">
+                        <img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=800&auto=format&fit=crop"
+                            alt="Event"
+                            class="w-full h-[500px] object-cover hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <!-- Floating Accent Image -->
+                    <div
+                        class="absolute -bottom-8 -right-8 w-48 h-48 rounded-2xl overflow-hidden shadow-xl border-4 border-dark-950 z-20 animate-float">
+                        <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?q=80&w=400&auto=format&fit=crop"
+                            alt="Concert" class="w-full h-full object-cover">
+                    </div>
+                    <!-- Background Shape -->
+                    <div class="absolute -top-6 -left-6 w-full h-full rounded-3xl border-2 border-primary/20 z-0"></div>
+                    <!-- Experience Badge -->
+                    <div
+                        class="absolute top-6 -left-4 z-20 bg-gradient-to-br from-primary to-neon-pink p-5 rounded-2xl shadow-xl animate-float-delay">
+                        <div class="text-3xl font-black text-white">12+</div>
+                        <div class="text-xs text-white/80 font-medium">Years of<br>Excellence</div>
+                    </div>
+                </div>
+
+                <!-- Right: Content -->
+                <div class="reveal-right">
+                    <span class="inline-block text-primary text-sm font-bold uppercase tracking-[0.2em] mb-4">Why Choose
+                        Us</span>
+                    <h2 class="text-4xl md:text-5xl font-black text-white mb-6 leading-tight">
+                        We Don't Just Plan Events,<br>
+                        <span class="text-gradient-static">We Create Legacies</span>
+                    </h2>
+                    <p class="text-gray-400 text-lg mb-10 leading-relaxed">
+                        Every detail matters. From the first spark of an idea to the final standing ovation, our team of
+                        visionary planners, designers, and producers work tirelessly to craft immersive experiences.
+                    </p>
+
+                    <!-- Feature Cards -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 stagger">
+                        <div
+                            class="group p-5 rounded-2xl bg-white/[0.03] border border-white/[0.06] hover:border-primary/30 transition-all duration-300 reveal">
+                            <div
+                                class="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                            </div>
+                            <h4 class="text-white font-bold mb-1">Lightning Fast</h4>
+                            <p class="text-gray-500 text-sm">48-hour event concepts delivered on time, every time.</p>
+                        </div>
+                        <div
+                            class="group p-5 rounded-2xl bg-white/[0.03] border border-white/[0.06] hover:border-accent/30 transition-all duration-300 reveal">
+                            <div
+                                class="w-11 h-11 rounded-xl bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
+                                <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                </svg>
+                            </div>
+                            <h4 class="text-white font-bold mb-1">Made With Love</h4>
+                            <p class="text-gray-500 text-sm">Personal attention to every single detail matters.</p>
+                        </div>
+                        <div
+                            class="group p-5 rounded-2xl bg-white/[0.03] border border-white/[0.06] hover:border-neon-blue/30 transition-all duration-300 reveal">
+                            <div
+                                class="w-11 h-11 rounded-xl bg-neon-blue/10 flex items-center justify-center mb-4 group-hover:bg-neon-blue/20 transition-colors">
+                                <svg class="w-5 h-5 text-neon-blue" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <h4 class="text-white font-bold mb-1">Global Reach</h4>
+                            <p class="text-gray-500 text-sm">Events across 30+ countries and counting.</p>
+                        </div>
+                        <div
+                            class="group p-5 rounded-2xl bg-white/[0.03] border border-white/[0.06] hover:border-neon-pink/30 transition-all duration-300 reveal">
+                            <div
+                                class="w-11 h-11 rounded-xl bg-neon-pink/10 flex items-center justify-center mb-4 group-hover:bg-neon-pink/20 transition-colors">
+                                <svg class="w-5 h-5 text-neon-pink" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                                </svg>
+                            </div>
+                            <h4 class="text-white font-bold mb-1">Award Winning</h4>
+                            <p class="text-gray-500 text-sm">50+ industry awards for creative excellence.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SERVICES SECTION ===================== -->
+    <section id="services" class="py-28 bg-dark-900 relative overflow-hidden noise">
+        <div class="absolute inset-0 bg-mesh"></div>
+
+        <!-- Decorative Orbs -->
+        <div class="absolute bottom-0 left-1/4 w-80 h-80 bg-primary/10 rounded-full blur-[120px]"></div>
+        <div class="absolute top-0 right-1/3 w-60 h-60 bg-accent/10 rounded-full blur-[100px]"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-20 reveal">
+                <span class="inline-block text-primary text-sm font-bold uppercase tracking-[0.2em] mb-4">What We
+                    Do</span>
+                <h2 class="text-4xl md:text-6xl font-black text-white mb-5">
+                    Our <span class="text-gradient">Services</span>
+                </h2>
+                <p class="text-gray-400 max-w-2xl mx-auto text-lg">Comprehensive event solutions powered by creativity,
+                    precision, and a relentless pursuit of perfection.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 stagger">
+                <!-- Service 1 -->
+                <div
+                    class="card-3d group relative p-8 rounded-3xl bg-white/[0.03] border border-white/[0.06] hover:border-primary/40 overflow-hidden reveal">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-7 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Dream Weddings</h3>
+                        <p class="text-gray-400 mb-6 leading-relaxed">Bespoke wedding planning from intimate garden
+                            ceremonies to grand ballroom celebrations. Every love story deserves a perfect chapter.</p>
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="flex -space-x-2">
+                                <img src="https://i.pravatar.cc/40?img=10"
+                                    class="w-8 h-8 rounded-full border-2 border-dark-900" alt="">
+                                <img src="https://i.pravatar.cc/40?img=20"
+                                    class="w-8 h-8 rounded-full border-2 border-dark-900" alt="">
+                                <img src="https://i.pravatar.cc/40?img=30"
+                                    class="w-8 h-8 rounded-full border-2 border-dark-900" alt="">
+                            </div>
+                            <span class="text-xs text-gray-500">500+ happy couples</span>
+                        </div>
+                        <a href="#contact"
+                            class="inline-flex items-center gap-2 text-primary font-semibold group/link hover:gap-3 transition-all">
+                            Learn more
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div
+                    class="card-3d group relative p-8 rounded-3xl bg-white/[0.03] border border-white/[0.06] hover:border-accent/40 overflow-hidden reveal">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center mb-7 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Corporate Events</h3>
+                        <p class="text-gray-400 mb-6 leading-relaxed">Elevate your brand with stunning conferences,
+                            product launches, and team experiences that leave lasting impressions.</p>
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="flex -space-x-2">
+                                <img src="https://i.pravatar.cc/40?img=40"
+                                    class="w-8 h-8 rounded-full border-2 border-dark-900" alt="">
+                                <img src="https://i.pravatar.cc/40?img=50"
+                                    class="w-8 h-8 rounded-full border-2 border-dark-900" alt="">
+                                <img src="https://i.pravatar.cc/40?img=60"
+                                    class="w-8 h-8 rounded-full border-2 border-dark-900" alt="">
+                            </div>
+                            <span class="text-xs text-gray-500">200+ companies trust us</span>
+                        </div>
+                        <a href="#contact"
+                            class="inline-flex items-center gap-2 text-accent font-semibold group/link hover:gap-3 transition-all">
+                            Learn more
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div
+                    class="card-3d group relative p-8 rounded-3xl bg-white/[0.03] border border-white/[0.06] hover:border-neon-pink/40 overflow-hidden reveal">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-neon-pink/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-neon-pink/20 to-neon-pink/5 flex items-center justify-center mb-7 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-8 h-8 text-neon-pink" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Concerts & Festivals</h3>
+                        <p class="text-gray-400 mb-6 leading-relaxed">Epic music events and festivals designed to
+                            electrify crowds with world-class production and unforgettable vibes.</p>
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="flex -space-x-2">
+                                <img src="https://i.pravatar.cc/40?img=15"
+                                    class="w-8 h-8 rounded-full border-2 border-dark-900" alt="">
+                                <img src="https://i.pravatar.cc/40?img=25"
+                                    class="w-8 h-8 rounded-full border-2 border-dark-900" alt="">
+                                <img src="https://i.pravatar.cc/40?img=35"
+                                    class="w-8 h-8 rounded-full border-2 border-dark-900" alt="">
+                            </div>
+                            <span class="text-xs text-gray-500">1M+ attendees served</span>
+                        </div>
+                        <a href="#contact"
+                            class="inline-flex items-center gap-2 text-neon-pink font-semibold group/link hover:gap-3 transition-all">
+                            Learn more
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div
+                    class="card-3d group relative p-8 rounded-3xl bg-white/[0.03] border border-white/[0.06] hover:border-neon-blue/40 overflow-hidden reveal">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-neon-blue/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-neon-blue/20 to-neon-blue/5 flex items-center justify-center mb-7 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-8 h-8 text-neon-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Social Celebrations</h3>
+                        <p class="text-gray-400 mb-6 leading-relaxed">Birthdays, anniversaries, galas and everything in
+                            between. Make your celebration the talk of the town.</p>
+                        <a href="#contact"
+                            class="inline-flex items-center gap-2 text-neon-blue font-semibold group/link hover:gap-3 transition-all">
+                            Learn more
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div
+                    class="card-3d group relative p-8 rounded-3xl bg-white/[0.03] border border-white/[0.06] hover:border-neon-green/40 overflow-hidden reveal">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-neon-green/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-neon-green/20 to-neon-green/5 flex items-center justify-center mb-7 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-8 h-8 text-neon-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Virtual & Hybrid</h3>
+                        <p class="text-gray-400 mb-6 leading-relaxed">Cutting-edge virtual and hybrid experiences that
+                            connect audiences worldwide with seamless technology.</p>
+                        <a href="#contact"
+                            class="inline-flex items-center gap-2 text-neon-green font-semibold group/link hover:gap-3 transition-all">
+                            Learn more
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div
+                    class="card-3d group relative p-8 rounded-3xl bg-white/[0.03] border border-white/[0.06] hover:border-primary-light/40 overflow-hidden reveal">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-primary-light/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary-light/20 to-primary-light/5 flex items-center justify-center mb-7 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-8 h-8 text-primary-light" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">Venue Curation</h3>
+                        <p class="text-gray-400 mb-6 leading-relaxed">Access to 500+ exclusive venues worldwide. We
+                            match the perfect space to your vision and bring it to life.</p>
+                        <a href="#contact"
+                            class="inline-flex items-center gap-2 text-primary-light font-semibold group/link hover:gap-3 transition-all">
+                            Learn more
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== GALLERY SECTION ===================== -->
+    <section id="gallery" class="py-28 bg-dark-950 relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6 reveal">
+                <div>
+                    <span
+                        class="inline-block text-primary text-sm font-bold uppercase tracking-[0.2em] mb-4">Portfolio</span>
+                    <h2 class="text-4xl md:text-6xl font-black text-white">
+                        Recent <span class="text-gradient">Showcase</span>
+                    </h2>
+                </div>
+                <div class="flex gap-3">
+                    <button onclick="filterGallery('all')"
+                        class="gallery-filter active px-5 py-2 rounded-full text-sm font-semibold bg-primary text-white transition-all">All</button>
+                    <button onclick="filterGallery('wedding')"
+                        class="gallery-filter px-5 py-2 rounded-full text-sm font-semibold bg-white/5 text-gray-400 hover:bg-white/10 transition-all">Weddings</button>
+                    <button onclick="filterGallery('corporate')"
+                        class="gallery-filter px-5 py-2 rounded-full text-sm font-semibold bg-white/5 text-gray-400 hover:bg-white/10 transition-all">Corporate</button>
+                    <button onclick="filterGallery('concert')"
+                        class="gallery-filter px-5 py-2 rounded-full text-sm font-semibold bg-white/5 text-gray-400 hover:bg-white/10 transition-all">Concerts</button>
+                </div>
+            </div>
+
+            <div id="gallery-grid" class="grid grid-cols-1 md:grid-cols-3 gap-5 auto-rows-[280px] md:auto-rows-[320px]">
+                <!-- Gallery Item 1 (Large) -->
+                <div class="gallery-item md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-3xl cursor-pointer reveal-scale"
+                    data-category="corporate">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1200&auto=format&fit=crop"
+                        alt="Tech Summit"
+                        class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-1">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
+                        <div
+                            class="absolute bottom-0 left-0 p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                            <span
+                                class="inline-block px-3 py-1 bg-primary/80 text-white text-xs font-bold uppercase tracking-wider rounded-full mb-3">Corporate</span>
+                            <h3 class="text-white text-3xl font-bold mb-1">Tech Summit 2025</h3>
+                            <p class="text-gray-300 text-sm">5,000 attendees &bull; San Francisco</p>
+                        </div>
+                    </div>
+                    <!-- Corner Decoration -->
+                    <div
+                        class="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-50 group-hover:scale-100">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item relative group overflow-hidden rounded-3xl cursor-pointer reveal-scale"
+                    data-category="wedding">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800&auto=format&fit=crop"
+                        alt="Garden Wedding"
+                        class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-1">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
+                        <div
+                            class="absolute bottom-0 left-0 p-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                            <span
+                                class="inline-block px-3 py-1 bg-neon-pink/80 text-white text-xs font-bold uppercase tracking-wider rounded-full mb-2">Wedding</span>
+                            <h3 class="text-white text-xl font-bold">Enchanted Garden</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item relative group overflow-hidden rounded-3xl cursor-pointer reveal-scale"
+                    data-category="concert">
+                    <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?q=80&w=800&auto=format&fit=crop"
+                        alt="Music Festival"
+                        class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-1">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
+                        <div
+                            class="absolute bottom-0 left-0 p-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                            <span
+                                class="inline-block px-3 py-1 bg-neon-blue/80 text-white text-xs font-bold uppercase tracking-wider rounded-full mb-2">Concert</span>
+                            <h3 class="text-white text-xl font-bold">Neon Nights Festival</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item relative group overflow-hidden rounded-3xl cursor-pointer reveal-scale"
+                    data-category="wedding">
+                    <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&w=800&auto=format&fit=crop"
+                        alt="Beach Wedding"
+                        class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-1">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
+                        <div
+                            class="absolute bottom-0 left-0 p-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                            <span
+                                class="inline-block px-3 py-1 bg-neon-pink/80 text-white text-xs font-bold uppercase tracking-wider rounded-full mb-2">Wedding</span>
+                            <h3 class="text-white text-xl font-bold">Sunset Beach Ceremony</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item relative group overflow-hidden rounded-3xl cursor-pointer reveal-scale"
+                    data-category="corporate">
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800&auto=format&fit=crop"
+                        alt="Conference"
+                        class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-1">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
+                        <div
+                            class="absolute bottom-0 left-0 p-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                            <span
+                                class="inline-block px-3 py-1 bg-primary/80 text-white text-xs font-bold uppercase tracking-wider rounded-full mb-2">Corporate</span>
+                            <h3 class="text-white text-xl font-bold">Innovation Summit</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item relative group overflow-hidden rounded-3xl cursor-pointer reveal-scale"
+                    data-category="concert">
+                    <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?q=80&w=800&auto=format&fit=crop"
+                        alt="Concert"
+                        class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-1">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
+                        <div
+                            class="absolute bottom-0 left-0 p-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                            <span
+                                class="inline-block px-3 py-1 bg-neon-blue/80 text-white text-xs font-bold uppercase tracking-wider rounded-full mb-2">Concert</span>
+                            <h3 class="text-white text-xl font-bold">Electric Dreams Tour</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== STATS / COUNTER SECTION ===================== -->
+    <section id="stats" class="py-24 relative overflow-hidden">
+        <!-- Animated Background -->
+        <div
+            class="absolute inset-0 bg-gradient-to-r from-primary-dark via-dark-800 to-primary-dark bg-[length:200%_200%] animate-gradient-shift">
+        </div>
+        <div class="absolute inset-0 bg-mesh"></div>
+
+        <!-- Morphing Shapes -->
+        <div class="absolute top-10 left-10 w-40 h-40 bg-accent/20 animate-morph blur-md"></div>
+        <div class="absolute bottom-10 right-10 w-60 h-60 bg-neon-blue/10 animate-morph blur-lg"
+            style="animation-delay:3s;"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8" id="counter-section">
+                <!-- Counter 1 -->
+                <div class="text-center reveal">
+                    <div class="text-5xl md:text-7xl font-black text-white mb-2 counter-value" data-target="2500">0
+                    </div>
+                    <div class="w-12 h-1 bg-accent mx-auto rounded-full mb-3"></div>
+                    <p class="text-gray-300 font-medium text-sm uppercase tracking-wider">Events Delivered</p>
+                </div>
+                <!-- Counter 2 -->
+                <div class="text-center reveal">
+                    <div class="text-5xl md:text-7xl font-black text-white mb-2 counter-value" data-target="98">0</div>
+                    <div class="w-12 h-1 bg-neon-pink mx-auto rounded-full mb-3"></div>
+                    <p class="text-gray-300 font-medium text-sm uppercase tracking-wider">Client Satisfaction %</p>
+                </div>
+                <!-- Counter 3 -->
+                <div class="text-center reveal">
+                    <div class="text-5xl md:text-7xl font-black text-white mb-2 counter-value" data-target="35">0</div>
+                    <div class="w-12 h-1 bg-neon-blue mx-auto rounded-full mb-3"></div>
+                    <p class="text-gray-300 font-medium text-sm uppercase tracking-wider">Countries Served</p>
+                </div>
+                <!-- Counter 4 -->
+                <div class="text-center reveal">
+                    <div class="text-5xl md:text-7xl font-black text-white mb-2 counter-value" data-target="50">0</div>
+                    <div class="w-12 h-1 bg-neon-green mx-auto rounded-full mb-3"></div>
+                    <p class="text-gray-300 font-medium text-sm uppercase tracking-wider">Industry Awards</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== IMAGE CAROUSEL ===================== -->
+    <section class="py-16 bg-dark-950 overflow-hidden">
+        <div class="relative">
+            <!-- Row 1 - Left to Right -->
+            <div class="flex gap-5 mb-5 carousel-track" style="animation-duration: 35s;">
+                <div class="shrink-0 w-72 h-48 rounded-2xl overflow-hidden group"><img
+                        src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?q=80&w=500&auto=format&fit=crop"
+                        alt=""
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="shrink-0 w-56 h-48 rounded-2xl overflow-hidden group"><img
+                        src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=500&auto=format&fit=crop"
+                        alt=""
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="shrink-0 w-80 h-48 rounded-2xl overflow-hidden group"><img
+                        src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=500&auto=format&fit=crop"
+                        alt=""
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="shrink-0 w-64 h-48 rounded-2xl overflow-hidden group"><img
+                        src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=500&auto=format&fit=crop"
+                        alt=""
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="shrink-0 w-72 h-48 rounded-2xl overflow-hidden group"><img
+                        src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=500&auto=format&fit=crop"
+                        alt=""
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="shrink-0 w-56 h-48 rounded-2xl overflow-hidden group"><img
+                        src="https://images.unsplash.com/photo-1478146059778-26028b07395a?q=80&w=500&auto=format&fit=crop"
+                        alt=""
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <!-- Duplicated for seamless loop -->
+                <div class="shrink-0 w-72 h-48 rounded-2xl overflow-hidden group"><img
+                        src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?q=80&w=500&auto=format&fit=crop"
+                        alt=""
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="shrink-0 w-56 h-48 rounded-2xl overflow-hidden group"><img
+                        src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=500&auto=format&fit=crop"
+                        alt=""
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="shrink-0 w-80 h-48 rounded-2xl overflow-hidden group"><img
+                        src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=500&auto=format&fit=crop"
+                        alt=""
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="shrink-0 w-64 h-48 rounded-2xl overflow-hidden group"><img
+                        src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=500&auto=format&fit=crop"
+                        alt=""
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="shrink-0 w-72 h-48 rounded-2xl overflow-hidden group"><img
+                        src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=500&auto=format&fit=crop"
+                        alt=""
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="shrink-0 w-56 h-48 rounded-2xl overflow-hidden group"><img
+                        src="https://images.unsplash.com/photo-1478146059778-26028b07395a?q=80&w=500&auto=format&fit=crop"
+                        alt=""
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+            </div>
+            <!-- Row 2 - Right to Left -->
+            <div class="flex gap-5 carousel-track" style="animation-direction: reverse; animation-duration: 40s;">
+                <div class="shrink-0 w-64 h-48 rounded-2xl overflow-hidden group"><img
+                        src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=500&auto=format&fit=crop"
+                        alt=""
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="shrink-0 w-80 h-48 rounded-2xl overflow-hidden group"><img
+                        src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=500&auto=format&fit=crop"
+                        alt=""
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="shrink-0 w-56 h-48 rounded-2xl overflow-hidden group"><img
+                        src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=500&auto=format&fit=crop"
+                        alt=""
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="shrink-0 w-72 h-48 rounded-2xl overflow-hidden group"><img
+                        src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=500&auto=format&fit=crop"
+                        alt=""
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="shrink-0 w-60 h-48 rounded-2xl overflow-hidden group"><img
+                        src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?q=80&w=500&auto=format&fit=crop"
+                        alt=""
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="shrink-0 w-72 h-48 rounded-2xl overflow-hidden group"><img
+                        src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?q=80&w=500&auto=format&fit=crop"
+                        alt=""
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <!-- Duplicated -->
+                <div class="shrink-0 w-64 h-48 rounded-2xl overflow-hidden group"><img
+                        src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=500&auto=format&fit=crop"
+                        alt=""
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="shrink-0 w-80 h-48 rounded-2xl overflow-hidden group"><img
+                        src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=500&auto=format&fit=crop"
+                        alt=""
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="shrink-0 w-56 h-48 rounded-2xl overflow-hidden group"><img
+                        src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=500&auto=format&fit=crop"
+                        alt=""
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="shrink-0 w-72 h-48 rounded-2xl overflow-hidden group"><img
+                        src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=500&auto=format&fit=crop"
+                        alt=""
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="shrink-0 w-60 h-48 rounded-2xl overflow-hidden group"><img
+                        src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?q=80&w=500&auto=format&fit=crop"
+                        alt=""
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="shrink-0 w-72 h-48 rounded-2xl overflow-hidden group"><img
+                        src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?q=80&w=500&auto=format&fit=crop"
+                        alt=""
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+            </div>
+            <!-- Fade edges -->
+            <div
+                class="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-dark-950 to-transparent z-10 pointer-events-none">
+            </div>
+            <div
+                class="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-dark-950 to-transparent z-10 pointer-events-none">
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS SECTION ===================== -->
+    <section id="testimonials" class="py-28 bg-dark-900 relative overflow-hidden noise">
+        <!-- Decorative -->
+        <div
+            class="absolute top-0 right-0 -mr-20 -mt-20 w-[500px] h-[500px] bg-primary opacity-[0.07] rounded-full blur-[150px]">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 -ml-20 -mb-20 w-[400px] h-[400px] bg-accent opacity-[0.07] rounded-full blur-[120px]">
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-20 reveal">
+                <span
+                    class="inline-block text-primary text-sm font-bold uppercase tracking-[0.2em] mb-4">Testimonials</span>
+                <h2 class="text-4xl md:text-6xl font-black text-white mb-5">Client <span
+                        class="text-gradient">Stories</span></h2>
+                <p class="text-gray-400 max-w-2xl mx-auto text-lg">Real words from real people who trusted us with their
+                    most important moments.</p>
+            </div>
+
+            <!-- Testimonials Slider -->
+            <div class="relative max-w-5xl mx-auto">
+                <div id="testimonial-slider" class="overflow-hidden">
+                    <div id="testimonial-track" class="flex transition-transform duration-700 ease-out">
+                        <!-- Testimonial 1 -->
+                        <div class="w-full shrink-0 px-4">
+                            <div class="glass-card p-10 rounded-3xl text-center max-w-3xl mx-auto">
+                                <div class="flex justify-center gap-1 text-accent mb-6">
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                    </svg>
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                    </svg>
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                    </svg>
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                    </svg>
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                    </svg>
+                                </div>
+                                <svg class="w-10 h-10 text-primary/30 mx-auto mb-4" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                                </svg>
+                                <p class="text-xl md:text-2xl text-gray-300 italic mb-8 leading-relaxed">"Wixlo Event
+                                    transformed our vision into reality. The attention to detail was unmatched. Every
+                                    guest was mesmerized. Absolutely stunning work that exceeded all expectations!"</p>
+                                <div class="flex items-center justify-center gap-4">
+                                    <img src="https://i.pravatar.cc/80?img=1" alt="Sarah"
+                                        class="w-14 h-14 rounded-full border-2 border-primary shadow-lg shadow-primary/20">
+                                    <div class="text-left">
+                                        <h4 class="font-bold text-white text-lg">Sarah Jenkins</h4>
+                                        <p class="text-sm text-gray-400">Marketing Director, TechCorp</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 2 -->
+                        <div class="w-full shrink-0 px-4">
+                            <div class="glass-card p-10 rounded-3xl text-center max-w-3xl mx-auto">
+                                <div class="flex justify-center gap-1 text-accent mb-6">
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                    </svg>
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                    </svg>
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                    </svg>
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                    </svg>
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                    </svg>
+                                </div>
+                                <svg class="w-10 h-10 text-primary/30 mx-auto mb-4" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                                </svg>
+                                <p class="text-xl md:text-2xl text-gray-300 italic mb-8 leading-relaxed">"Our wedding
+                                    was a fairy tale come true. The team handled every single detail so we could just
+                                    enjoy our most magical day. Couldn't have asked for more!"</p>
+                                <div class="flex items-center justify-center gap-4">
+                                    <img src="https://i.pravatar.cc/80?img=5" alt="Michael"
+                                        class="w-14 h-14 rounded-full border-2 border-neon-pink shadow-lg shadow-neon-pink/20">
+                                    <div class="text-left">
+                                        <h4 class="font-bold text-white text-lg">Michael & Emily</h4>
+                                        <p class="text-sm text-gray-400">Newlyweds, June 2025</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 3 -->
+                        <div class="w-full shrink-0 px-4">
+                            <div class="glass-card p-10 rounded-3xl text-center max-w-3xl mx-auto">
+                                <div class="flex justify-center gap-1 text-accent mb-6">
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                    </svg>
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                    </svg>
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                    </svg>
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                    </svg>
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                    </svg>
+                                </div>
+                                <svg class="w-10 h-10 text-primary/30 mx-auto mb-4" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                                </svg>
+                                <p class="text-xl md:text-2xl text-gray-300 italic mb-8 leading-relaxed">"Professional,
+                                    creative, and endlessly reliable. They brought revolutionary ideas to our annual
+                                    gala that made it the event of the year. Pure genius!"</p>
+                                <div class="flex items-center justify-center gap-4">
+                                    <img src="https://i.pravatar.cc/80?img=12" alt="David"
+                                        class="w-14 h-14 rounded-full border-2 border-accent shadow-lg shadow-accent/20">
+                                    <div class="text-left">
+                                        <h4 class="font-bold text-white text-lg">David Chen</h4>
+                                        <p class="text-sm text-gray-400">CEO, FutureSoft International</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 4 -->
+                        <div class="w-full shrink-0 px-4">
+                            <div class="glass-card p-10 rounded-3xl text-center max-w-3xl mx-auto">
+                                <div class="flex justify-center gap-1 text-accent mb-6">
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                    </svg>
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                    </svg>
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                    </svg>
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                    </svg>
+                                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                    </svg>
+                                </div>
+                                <svg class="w-10 h-10 text-primary/30 mx-auto mb-4" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                                </svg>
+                                <p class="text-xl md:text-2xl text-gray-300 italic mb-8 leading-relaxed">"The virtual
+                                    conference they produced for us reached 50,000 viewers across 20 countries. Flawless
+                                    execution, incredible production value. A game-changer!"</p>
+                                <div class="flex items-center justify-center gap-4">
+                                    <img src="https://i.pravatar.cc/80?img=32" alt="Priya"
+                                        class="w-14 h-14 rounded-full border-2 border-neon-blue shadow-lg shadow-neon-blue/20">
+                                    <div class="text-left">
+                                        <h4 class="font-bold text-white text-lg">Priya Sharma</h4>
+                                        <p class="text-sm text-gray-400">VP Events, GlobalTech</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider Controls -->
+                <div class="flex justify-center items-center gap-6 mt-10">
+                    <button onclick="moveTestimonial(-1)"
+                        class="w-12 h-12 rounded-full border border-white/10 hover:border-primary/50 hover:bg-primary/10 flex items-center justify-center text-white transition-all">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                    <div class="flex gap-2" id="testimonial-dots">
+                        <button class="t-dot w-3 h-3 rounded-full bg-primary transition-all" data-index="0"></button>
+                        <button class="t-dot w-3 h-3 rounded-full bg-white/20 hover:bg-white/40 transition-all"
+                            data-index="1"></button>
+                        <button class="t-dot w-3 h-3 rounded-full bg-white/20 hover:bg-white/40 transition-all"
+                            data-index="2"></button>
+                        <button class="t-dot w-3 h-3 rounded-full bg-white/20 hover:bg-white/40 transition-all"
+                            data-index="3"></button>
+                    </div>
+                    <button onclick="moveTestimonial(1)"
+                        class="w-12 h-12 rounded-full border border-white/10 hover:border-primary/50 hover:bg-primary/10 flex items-center justify-center text-white transition-all">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CTA SECTION ===================== -->
+    <section class="py-28 bg-dark-950 relative overflow-hidden">
+        <div class="absolute inset-0 bg-mesh"></div>
+        <!-- Large Floating Shapes -->
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border border-primary/10 rounded-full animate-spin-slow">
+        </div>
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border border-accent/10 rounded-full animate-spin-reverse">
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10 text-center reveal">
+            <h2 class="text-4xl md:text-7xl font-black text-white mb-6 leading-tight">
+                Ready to Create<br>
+                <span class="text-gradient">Something Epic?</span>
+            </h2>
+            <p class="text-xl text-gray-400 mb-12 max-w-2xl mx-auto">Let's turn your vision into an unforgettable
+                reality. Start the journey today.</p>
+            <a href="#contact"
+                class="btn-shimmer group inline-flex items-center gap-3 px-12 py-5 bg-gradient-to-r from-primary via-neon-pink to-accent text-white font-bold text-lg rounded-full transition-all transform hover:scale-105 shadow-2xl shadow-primary/30">
+                <span>Start Your Journey</span>
+                <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT SECTION ===================== -->
+    <section id="contact" class="py-28 bg-dark-900 relative overflow-hidden noise">
+        <div class="absolute inset-0 bg-mesh"></div>
+        <div class="absolute top-20 right-20 w-72 h-72 bg-primary/10 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-20 left-20 w-60 h-60 bg-accent/10 rounded-full blur-[100px]"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <!-- Left Content -->
+                <div class="reveal-left">
+                    <span
+                        class="inline-block text-primary text-sm font-bold uppercase tracking-[0.2em] mb-4">Contact</span>
+                    <h2 class="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
+                        Let's Create<br>
+                        <span class="text-gradient-static">Magic Together</span>
+                    </h2>
+                    <p class="text-xl text-gray-400 mb-12 leading-relaxed">Ready to start planning your next event? Get
+                        in touch with us today for a free consultation.</p>
+
+                    <div class="flex flex-col gap-6 stagger">
+                        <!-- Address -->
+                        <div class="flex items-start gap-5 group reveal">
+                            <div
+                                class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-white mb-1">Visit Us</h4>
+                                <p class="text-gray-400">123 Event Avenue, Creative District, NY 10012</p>
+                            </div>
+                        </div>
+                        <!-- Email -->
+                        <div class="flex items-start gap-5 group reveal">
+                            <div
+                                class="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent/20 transition-colors">
+                                <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-white mb-1">Email Us</h4>
+                                <p class="text-gray-400">hello@wixloevent.com</p>
+                            </div>
+                        </div>
+                        <!-- Phone -->
+                        <div class="flex items-start gap-5 group reveal">
+                            <div
+                                class="w-14 h-14 rounded-2xl bg-neon-blue/10 flex items-center justify-center flex-shrink-0 group-hover:bg-neon-blue/20 transition-colors">
+                                <svg class="w-6 h-6 text-neon-blue" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-white mb-1">Call Us</h4>
+                                <p class="text-gray-400">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Form -->
+                <div class="reveal-right">
+                    <div class="glass-card p-10 rounded-3xl">
+                        <form class="flex flex-col gap-5" onsubmit="event.preventDefault(); showToast();">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-300 mb-2">First Name</label>
+                                    <input type="text"
+                                        class="w-full px-5 py-3.5 rounded-xl bg-white/5 border border-white/10 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-white placeholder-gray-500"
+                                        placeholder="John">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-300 mb-2">Last Name</label>
+                                    <input type="text"
+                                        class="w-full px-5 py-3.5 rounded-xl bg-white/5 border border-white/10 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-white placeholder-gray-500"
+                                        placeholder="Doe">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-300 mb-2">Email Address</label>
+                                <input type="email"
+                                    class="w-full px-5 py-3.5 rounded-xl bg-white/5 border border-white/10 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-white placeholder-gray-500"
+                                    placeholder="john@example.com">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-300 mb-2">Event Type</label>
+                                <select
+                                    class="w-full px-5 py-3.5 rounded-xl bg-white/5 border border-white/10 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-white">
+                                    <option value="" class="bg-dark-900">Select event type</option>
+                                    <option value="wedding" class="bg-dark-900">Wedding</option>
+                                    <option value="corporate" class="bg-dark-900">Corporate</option>
+                                    <option value="concert" class="bg-dark-900">Concert / Festival</option>
+                                    <option value="social" class="bg-dark-900">Social Gathering</option>
+                                    <option value="virtual" class="bg-dark-900">Virtual / Hybrid</option>
+                                    <option value="other" class="bg-dark-900">Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-300 mb-2">Tell Us About Your
+                                    Vision</label>
+                                <textarea rows="4"
+                                    class="w-full px-5 py-3.5 rounded-xl bg-white/5 border border-white/10 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-white placeholder-gray-500 resize-none"
+                                    placeholder="Describe your dream event..."></textarea>
+                            </div>
+                            <button type="submit"
+                                class="btn-shimmer w-full py-4 bg-gradient-to-r from-primary to-primary-dark hover:from-primary-light hover:to-primary text-white font-bold rounded-xl shadow-lg shadow-violet-600/25 transition-all transform hover:scale-[1.02] text-lg">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="bg-dark-950 border-t border-white/5 text-gray-400 pt-20 pb-8 relative">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="lg:col-span-1">
+                    <a href="#" class="text-2xl font-bold text-white flex items-center gap-2 mb-6">
+                        <span
+                            class="w-10 h-10 rounded-xl bg-gradient-to-br from-primary via-neon-pink to-accent flex items-center justify-center text-dark-900 font-black text-lg">W</span>
+                        <span>Wixlo<span class="text-gradient-static">Event</span></span>
+                    </a>
+                    <p class="text-sm leading-relaxed mb-6">Creating extraordinary experiences one event at a time. Your
+                        vision, our expertise, together we make magic.</p>
+                    <!-- Social Links -->
+                    <div class="flex gap-3">
+                        <a href="#"
+                            class="w-10 h-10 rounded-xl bg-white/5 hover:bg-primary/20 border border-white/5 hover:border-primary/30 flex items-center justify-center text-gray-400 hover:text-primary transition-all">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-xl bg-white/5 hover:bg-neon-pink/20 border border-white/5 hover:border-neon-pink/30 flex items-center justify-center text-gray-400 hover:text-neon-pink transition-all">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.072 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-xl bg-white/5 hover:bg-neon-blue/20 border border-white/5 hover:border-neon-blue/30 flex items-center justify-center text-gray-400 hover:text-neon-blue transition-all">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-xl bg-white/5 hover:bg-accent/20 border border-white/5 hover:border-accent/30 flex items-center justify-center text-gray-400 hover:text-accent transition-all">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-white font-bold mb-6 text-lg">Services</h4>
+                    <ul class="flex flex-col gap-3 text-sm">
+                        <li><a href="#"
+                                class="hover:text-primary transition-colors inline-flex items-center gap-2 group"><svg
+                                    class="w-3 h-3 text-primary/50 group-hover:text-primary transition-colors"
+                                    fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 5l7 7-7 7" />
+                                </svg>Wedding Planning</a></li>
+                        <li><a href="#"
+                                class="hover:text-primary transition-colors inline-flex items-center gap-2 group"><svg
+                                    class="w-3 h-3 text-primary/50 group-hover:text-primary transition-colors"
+                                    fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 5l7 7-7 7" />
+                                </svg>Corporate Events</a></li>
+                        <li><a href="#"
+                                class="hover:text-primary transition-colors inline-flex items-center gap-2 group"><svg
+                                    class="w-3 h-3 text-primary/50 group-hover:text-primary transition-colors"
+                                    fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 5l7 7-7 7" />
+                                </svg>Concerts & Festivals</a></li>
+                        <li><a href="#"
+                                class="hover:text-primary transition-colors inline-flex items-center gap-2 group"><svg
+                                    class="w-3 h-3 text-primary/50 group-hover:text-primary transition-colors"
+                                    fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 5l7 7-7 7" />
+                                </svg>Virtual / Hybrid</a></li>
+                        <li><a href="#"
+                                class="hover:text-primary transition-colors inline-flex items-center gap-2 group"><svg
+                                    class="w-3 h-3 text-primary/50 group-hover:text-primary transition-colors"
+                                    fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 5l7 7-7 7" />
+                                </svg>Venue Curation</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h4 class="text-white font-bold mb-6 text-lg">Company</h4>
+                    <ul class="flex flex-col gap-3 text-sm">
+                        <li><a href="#about"
+                                class="hover:text-primary transition-colors inline-flex items-center gap-2 group"><svg
+                                    class="w-3 h-3 text-primary/50 group-hover:text-primary transition-colors"
+                                    fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 5l7 7-7 7" />
+                                </svg>About Us</a></li>
+                        <li><a href="#gallery"
+                                class="hover:text-primary transition-colors inline-flex items-center gap-2 group"><svg
+                                    class="w-3 h-3 text-primary/50 group-hover:text-primary transition-colors"
+                                    fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 5l7 7-7 7" />
+                                </svg>Portfolio</a></li>
+                        <li><a href="#testimonials"
+                                class="hover:text-primary transition-colors inline-flex items-center gap-2 group"><svg
+                                    class="w-3 h-3 text-primary/50 group-hover:text-primary transition-colors"
+                                    fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 5l7 7-7 7" />
+                                </svg>Testimonials</a></li>
+                        <li><a href="#contact"
+                                class="hover:text-primary transition-colors inline-flex items-center gap-2 group"><svg
+                                    class="w-3 h-3 text-primary/50 group-hover:text-primary transition-colors"
+                                    fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 5l7 7-7 7" />
+                                </svg>Contact</a></li>
+                        <li><a href="#"
+                                class="hover:text-primary transition-colors inline-flex items-center gap-2 group"><svg
+                                    class="w-3 h-3 text-primary/50 group-hover:text-primary transition-colors"
+                                    fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 5l7 7-7 7" />
+                                </svg>Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="text-white font-bold mb-6 text-lg">Newsletter</h4>
+                    <p class="text-sm mb-5 leading-relaxed">Subscribe for event tips, inspiration, and exclusive
+                        behind-the-scenes content.</p>
+                    <div class="flex gap-2">
+                        <input type="email" placeholder="Your email"
+                            class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl focus:border-primary outline-none text-white text-sm transition-colors">
+                        <button
+                            class="px-5 py-3 bg-gradient-to-r from-primary to-primary-dark hover:from-primary-light hover:to-primary text-white rounded-xl transition-all transform hover:scale-105 flex-shrink-0">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-gray-500">&copy; 2026 Wixlo Event. All rights reserved. Made with passion.</p>
+                <div class="flex gap-6 text-sm text-gray-500">
+                    <a href="#" class="hover:text-white transition-colors">Privacy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms</a>
+                    <a href="#" class="hover:text-white transition-colors">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================== TOAST NOTIFICATION ===================== -->
+    <div id="toast"
+        class="fixed bottom-8 right-8 z-[100] transform translate-x-[150%] transition-transform duration-500">
+        <div
+            class="flex items-center gap-3 px-6 py-4 bg-neon-green/10 backdrop-blur-xl border border-neon-green/20 rounded-2xl shadow-2xl shadow-neon-green/10">
+            <div class="w-8 h-8 rounded-full bg-neon-green/20 flex items-center justify-center flex-shrink-0">
+                <svg class="w-4 h-4 text-neon-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+            </div>
+            <div>
+                <p class="text-white font-bold text-sm">Message Sent!</p>
+                <p class="text-gray-400 text-xs">We'll get back to you within 24 hours.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== BACK TO TOP ===================== -->
+    <button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+        class="fixed bottom-8 left-8 z-50 w-12 h-12 rounded-full bg-primary/80 hover:bg-primary text-white shadow-lg shadow-primary/30 flex items-center justify-center opacity-0 translate-y-10 transition-all duration-300 backdrop-blur-sm">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+    <!-- ===================== ALL JAVASCRIPT ===================== -->
+    <script>
+        // === CURSOR GLOW ===
+        const cursorGlow = document.getElementById('cursor-glow');
+        document.addEventListener('mousemove', (e) => {
+            cursorGlow.style.left = e.clientX + 'px';
+            cursorGlow.style.top = e.clientY + 'px';
+            cursorGlow.style.opacity = '1';
+        });
+
+        // === HERO SLIDESHOW ===
+        const slides = document.querySelectorAll('.hero-slide');
+        const dots = document.querySelectorAll('.slide-dot');
+        let currentSlide = 0;
+        let slideInterval;
+
+        function goToSlide(index) {
+            slides.forEach((s, i) => { s.style.opacity = i === index ? '1' : '0'; });
+            dots.forEach((d, i) => {
+                d.classList.toggle('bg-white/60', i === index);
+                d.classList.toggle('w-12', i === index);
+                d.classList.toggle('bg-white/20', i !== index);
+                d.classList.toggle('w-8', i !== index);
+            });
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            goToSlide((currentSlide + 1) % slides.length);
+        }
+
+        dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                goToSlide(parseInt(dot.dataset.slide));
+                clearInterval(slideInterval);
+                slideInterval = setInterval(nextSlide, 5000);
+            });
+        });
+
+        slideInterval = setInterval(nextSlide, 5000);
+
+        // === NAVBAR SCROLL EFFECT ===
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('py-2', 'shadow-xl', 'shadow-black/20');
+                navbar.classList.remove('py-4');
+            } else {
+                navbar.classList.remove('py-2', 'shadow-xl', 'shadow-black/20');
+                navbar.classList.add('py-4');
+            }
+        });
+
+        // === MOBILE MENU ===
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const hamTop = document.getElementById('hamburger-top');
+        const hamMid = document.getElementById('hamburger-mid');
+        const hamBot = document.getElementById('hamburger-bot');
+        let menuOpen = false;
+
+        menuToggle.addEventListener('click', () => {
+            menuOpen = !menuOpen;
+            if (menuOpen) {
+                mobileMenu.classList.remove('hidden');
+                setTimeout(() => { mobileMenu.style.maxHeight = '400px'; }, 10);
+                hamTop.style.transform = 'rotate(45deg) translate(5px, 5px)';
+                hamMid.style.opacity = '0';
+                hamBot.style.transform = 'rotate(-45deg) translate(7px, -6px)';
+                mobileMenu.querySelectorAll('.reveal').forEach(el => el.classList.add('active'));
+            } else {
+                mobileMenu.style.maxHeight = '0';
+                setTimeout(() => { mobileMenu.classList.add('hidden'); }, 500);
+                hamTop.style.transform = 'translateY(-8px)';
+                hamMid.style.opacity = '1';
+                hamBot.style.transform = 'translateY(8px)';
+            }
+        });
+
+        // Close mobile menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuOpen = false;
+                mobileMenu.style.maxHeight = '0';
+                setTimeout(() => { mobileMenu.classList.add('hidden'); }, 500);
+                hamTop.style.transform = 'translateY(-8px)';
+                hamMid.style.opacity = '1';
+                hamBot.style.transform = 'translateY(8px)';
+            });
+        });
+
+        // === SCROLL REVEAL ===
+        const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // === COUNTER ANIMATION ===
+        let counterStarted = false;
+        const counterSection = document.getElementById('counter-section');
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !counterStarted) {
+                    counterStarted = true;
+                    document.querySelectorAll('.counter-value').forEach(counter => {
+                        const target = parseInt(counter.dataset.target);
+                        const duration = 2000;
+                        const startTime = performance.now();
+                        function updateCounter(currentTime) {
+                            const elapsed = currentTime - startTime;
+                            const progress = Math.min(elapsed / duration, 1);
+                            // Ease out cubic
+                            const eased = 1 - Math.pow(1 - progress, 3);
+                            counter.textContent = Math.floor(eased * target).toLocaleString() + (target > 100 ? '+' : target === 98 ? '%' : '+');
+                            if (progress < 1) requestAnimationFrame(updateCounter);
+                        }
+                        requestAnimationFrame(updateCounter);
+                    });
+                }
+            });
+        }, { threshold: 0.3 });
+
+        counterObserver.observe(counterSection);
+
+        // === TESTIMONIAL SLIDER ===
+        const testimonialTrack = document.getElementById('testimonial-track');
+        const tDots = document.querySelectorAll('.t-dot');
+        let currentTestimonial = 0;
+        const totalTestimonials = 4;
+        let testimonialAutoplay;
+
+        function goToTestimonial(index) {
+            currentTestimonial = ((index % totalTestimonials) + totalTestimonials) % totalTestimonials;
+            testimonialTrack.style.transform = `translateX(-${currentTestimonial * 100}%)`;
+            tDots.forEach((d, i) => {
+                d.classList.toggle('bg-primary', i === currentTestimonial);
+                d.classList.toggle('bg-white/20', i !== currentTestimonial);
+            });
+        }
+
+        function moveTestimonial(dir) {
+            goToTestimonial(currentTestimonial + dir);
+            resetTestimonialAutoplay();
+        }
+
+        tDots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                goToTestimonial(parseInt(dot.dataset.index));
+                resetTestimonialAutoplay();
+            });
+        });
+
+        function resetTestimonialAutoplay() {
+            clearInterval(testimonialAutoplay);
+            testimonialAutoplay = setInterval(() => goToTestimonial(currentTestimonial + 1), 6000);
+        }
+        testimonialAutoplay = setInterval(() => goToTestimonial(currentTestimonial + 1), 6000);
+
+        // === GALLERY FILTER ===
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const filters = document.querySelectorAll('.gallery-filter');
+
+            filters.forEach(f => {
+                f.classList.remove('bg-primary', 'text-white');
+                f.classList.add('bg-white/5', 'text-gray-400');
+            });
+            event.target.classList.add('bg-primary', 'text-white');
+            event.target.classList.remove('bg-white/5', 'text-gray-400');
+
+            items.forEach((item, i) => {
+                const itemCat = item.dataset.category;
+                const show = category === 'all' || itemCat === category;
+                item.style.transition = 'all 0.5s cubic-bezier(0.16, 1, 0.3, 1)';
+                if (show) {
+                    item.style.opacity = '1';
+                    item.style.transform = 'scale(1)';
+                    item.style.display = '';
+                } else {
+                    item.style.opacity = '0';
+                    item.style.transform = 'scale(0.9)';
+                    setTimeout(() => { item.style.display = 'none'; }, 500);
+                }
+            });
+        }
+
+        // === TOAST ===
+        function showToast() {
+            const toast = document.getElementById('toast');
+            toast.style.transform = 'translateX(0)';
+            setTimeout(() => { toast.style.transform = 'translateX(150%)'; }, 4000);
+        }
+
+        // === BACK TO TOP ===
+        const backToTop = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 600) {
+                backToTop.style.opacity = '1';
+                backToTop.style.transform = 'translateY(0)';
+            } else {
+                backToTop.style.opacity = '0';
+                backToTop.style.transform = 'translateY(10px)';
+            }
+        });
+
+        // === PARALLAX ON MOUSE (Desktop) ===
+        document.addEventListener('mousemove', (e) => {
+            const x = (e.clientX / window.innerWidth - 0.5) * 2;
+            const y = (e.clientY / window.innerHeight - 0.5) * 2;
+            document.querySelectorAll('.parallax-layer').forEach(el => {
+                const speed = el.dataset.speed || 20;
+                el.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+            });
+        });
+
+        // === SMOOTH SCROLL for all anchor links ===
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // === MAGNETIC BUTTONS (subtle effect on desktop) ===
+        document.querySelectorAll('.magnetic-btn').forEach(btn => {
+            btn.addEventListener('mousemove', (e) => {
+                const rect = btn.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                btn.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
+            });
+            btn.addEventListener('mouseleave', () => {
+                btn.style.transform = 'translate(0, 0)';
+            });
+        });
+    </script>
+</body>
+
+</html>
